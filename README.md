@@ -37,6 +37,3 @@ __Nutrition (Daniel)__ - Find nutritional macros, local prices, and suggest nutr
 * Week 6 - 8: Suggest more nutritious foods
 
 Week 9 - 10: Integration and testing
- 
-## The source code
-Awaiting upon your approval and first discussion to begin the development.
