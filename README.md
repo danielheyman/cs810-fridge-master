@@ -26,13 +26,16 @@ __Design (Jeremy)__ - Designing the components and pages displayed within the ap
 * Week 1 - 2: Market research of existing product designs
 * Week 3 - 4: Build UI using design software (photoshop?)
 * Week 5 - 8: Coding the design in Swift
+
 __Tracking (Matt)__ - Scanning food bar codes and setting up notifications for expiring food
 * Week 1 - 5: Develop bar code scanner
 * Week 6 - 8: Set up notification framework based on food category
+
 __Nutrition (Daniel)__ - Find nutritional macros, local prices, and suggest nutritional foods
 * Week 1 - 2: Find nutritional macros based on fridge barcode upc
 * Week 3 - 5: Find local prices of food
 * Week 6 - 8: Suggest more nutritious foods
+
 Week 9 - 10: Integration and testing
  
 ## The source code
