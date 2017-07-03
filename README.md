@@ -21,16 +21,6 @@ Our project idea is a fridge inventory iPhone/iPad app that helps keep track of 
 * Show total macros of all items in the fridge
 * Suggest foods that give you nutrition that you are missing (additional vitamins, veggies, etc)
 
-## Completed
-N/A
-
-## Currently Working On
-__Design (Jeremy)__ - Market research of existing product designs & Planning UI design
-
-__Tracking (Matt)__ - Researching open source barcode scanning libraries written in Swift.
-
-__Nutrition (Daniel)__ - API to get nutrition from barcode
-
 ## Timeframe
 __Design (Jeremy)__ - Designing the components and pages displayed within the app
 * Week 1 - 2: Market research of existing product designs
