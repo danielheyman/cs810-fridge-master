@@ -2,7 +2,9 @@
 
 ## Contributors
 Jeremy Doll
+
 Matthew Gomez
+
 Daniel Heyman
  
 ## App Name
@@ -12,19 +14,21 @@ Fridge Master
 Our project idea is a fridge inventory iPhone/iPad app that helps keep track of the items in your fridge. It does this by using the iPhone or iPad camera as a bar code scanner to take inventory of the items currently in your fridge. The app will show the nutritional information and ingredients when available and help the user keep track of expiring products by sending alerts and then suggesting where to buy replacement products.
  
 ## Features
-Scan food bar codes upon purchasing an item
-Compare food prices to local super markets - find when something goes on sale
-Set up notifications for expiring food
-Nutritional information based on scanned food
-Show total macros of all items in the fridge
-Suggest foods that give you nutrition that you are missing (additional vitamins, veggies, etc)
+* Scan food bar codes upon purchasing an item
+* Compare food prices to local super markets - find when something goes on sale
+* Set up notifications for expiring food
+* Nutritional information based on scanned food
+* Show total macros of all items in the fridge
+* Suggest foods that give you nutrition that you are missing (additional vitamins, veggies, etc)
 
 ## Completed
 N/A
 
 ## Currently Working On
 __Design (Jeremy)__ - Market research of existing product designs & Planning UI design
+
 __Tracking (Matt)__ - Researching open source barcode scanning libraries written in Swift.
+
 __Nutrition (Daniel)__ - API to get nutrition from barcode
 
 ## Timeframe
