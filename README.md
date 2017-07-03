@@ -18,16 +18,24 @@ Set up notifications for expiring food
 Nutritional information based on scanned food
 Show total macros of all items in the fridge
 Suggest foods that give you nutrition that you are missing (additional vitamins, veggies, etc)
- 
+
+## Completed
+N/A
+
+## Currently Working On
+__Design (Jeremy)__ - Market research of existing product designs & Planning UI design
+__Tracking (Matt)__ - Researching open source barcode scanning libraries written in Swift.
+__Nutrition (Daniel)__ - API to get nutrition from barcode
+
 ## Timeframe
-### Design (Jeremy) - Designing the components and pages displayed within the app
+__Design (Jeremy)__ - Designing the components and pages displayed within the app
 * Week 1 - 2: Market research of existing product designs
 * Week 3 - 4: Build UI using design software (photoshop?)
 * Week 5 - 8: Coding the design in Swift
-### Tracking (Matt) - Scanning food bar codes and setting up notifications for expiring food
+__Tracking (Matt)__ - Scanning food bar codes and setting up notifications for expiring food
 * Week 1 - 5: Develop bar code scanner
 * Week 6 - 8: Set up notification framework based on food category
-### Nutrition (Daniel) - Find nutritional macros, local prices, and suggest nutritional foods
+__Nutrition (Daniel)__ - Find nutritional macros, local prices, and suggest nutritional foods
 * Week 1 - 2: Find nutritional macros based on fridge barcode upc
 * Week 3 - 5: Find local prices of food
 * Week 6 - 8: Suggest more nutritious foods
