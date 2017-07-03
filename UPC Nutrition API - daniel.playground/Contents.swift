@@ -14,8 +14,6 @@ func findFromUpc(upc: String) {
         if error != nil {
             print("error")
         } else {
-            //let json = try JSONSerialization.jsonObject(with: data!, options:.allowFragments) as! [String : AnyObject]
-            
             let res = String(data: data!, encoding: String.Encoding.utf8)
             
             if res!.range(of:"Click to view reports for this food") != nil {
@@ -38,8 +36,6 @@ func findFromId(upc: String, id: String) {
         if error != nil {
             print("error")
         } else {
-            //let json = try JSONSerialization.jsonObject(with: data!, options:.allowFragments) as! [String : AnyObject]
-            
             let res = String(data: data!, encoding: String.Encoding.utf8)
             
             print("> FOUND UPC \(upc)")
