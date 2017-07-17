@@ -39,10 +39,60 @@ func findFromId(upc: String, id: String) {
             let res = String(data: data!, encoding: String.Encoding.utf8)
             
             print("> FOUND UPC \(upc)")
-            print(res!)
+            
+            convertFromRes(res: res!)
             
         }
     }.resume()
+}
+
+struct Nutrition {
+    var ndb_id: Int = 0
+    var name: String = ""
+    var unit: Float = 0
+    var unit_type: String = ""
+    var eq_gram: Float = 0
+    var ingredients: [String] = []
+    var nutrition_facts: [NutritionFact] = []
+}
+
+struct NutritionFact {
+    let name: String
+    let value: Float
+}
+
+func convertFromRes(res: String) {
+    print(res)
+    var obj = Nutrition();
+    
+    let regex = try! NSRegularExpression(pattern: "for: (\\d+), ([\\S ]+), UPC[\\S\\s]+?,\"([.\\d]+) ([\\S ]+) = ([.\\d]+)g")
+    let results = regex.matches(in: res, range: NSRange(location: 0, length: res.characters.count))
+    if results.count == 1 {
+        obj.ndb_id = Int((res as NSString).substring(with: results[0].rangeAt(1)))!
+        obj.name = (res as NSString).substring(with: results[0].rangeAt(2))
+        obj.unit = Float((res as NSString).substring(with: results[0].rangeAt(3)))!
+        obj.unit_type = (res as NSString).substring(with: results[0].rangeAt(4))
+        obj.eq_gram = Float((res as NSString).substring(with: results[0].rangeAt(5)))!
+    }
+    
+    let regexIngredients = try! NSRegularExpression(pattern: "Ingredients\\s\"([\\S\\s]+?)\\.{0,1}\"")
+    let resultsIngredients = regexIngredients.matches(in: res, range: NSRange(location: 0, length: res.characters.count))
+    if resultsIngredients.count == 1 {
+        obj.ingredients = (res as NSString).substring(with: resultsIngredients[0].rangeAt(1)).components(separatedBy: ",")
+    }
+    
+    let regexAll = try! NSRegularExpression(pattern: "\"([\\S ]+)\",\\w+(?:\\S+)?,([\\d.]+),[\\d.]+")
+    let resultsAll = regexAll.matches(in: res, range: NSRange(location: 0, length: res.characters.count))
+    if resultsAll.count > 0 {
+        obj.nutrition_facts = resultsAll.map {x -> NutritionFact in
+            return NutritionFact(
+                name: (res as NSString).substring(with: x.rangeAt(1)),
+                value: Float((res as NSString).substring(with: x.rangeAt(2)))!
+            )
+        }
+    }
+    
+    print(obj)
 }
 
 findFromUpc(upc: "743289")
@@ -52,33 +102,28 @@ findFromUpc(upc: "041331024914")
 /* Example response:
  > CANNOT FIND UPC 743289
  > FOUND UPC 041331024914
- Source: USDA Branded Food Products Database Release June 2017 Software v.3.8.5.1 2017-06-28
- Report Run at: July 02, 2017 23:05 EDT
- "Nutrient data for: 45108270, YELLOW SPLIT PEAS, UPC: 041331024914"
- Food Group:  Branded Food Products Database
- Common Name:
- 
- Nutrient,Unit,Data points,Std. Error,"0.25 cup = 50.0g",1Value per 100 g,
- Proximates
- "Energy",kcal,--,--,180,360
- "Protein",g,--,--,11.00,22.00
- "Total lipid (fat)",g,--,--,1.00,2.00
- "Carbohydrate, by difference",g,--,--,32.00,64.00
- "Fiber, total dietary",g,--,--,16.0,32.0
- "Sugars, total",g,--,--,1.00,2.00
- Minerals
- "Calcium, Ca",mg,--,--,20,40
- "Iron, Fe",mg,--,--,1.08,2.16
- "Sodium, Na",mg,--,--,0,0
- Vitamins
- "Vitamin C, total ascorbic acid",mg,--,--,1.2,2.4
- "Vitamin A, IU",IU,--,--,0,0
- Lipids
- "Fatty acids, total saturated",g,--,--,0.000,0.000
- "Fatty acids, total trans",g,--,--,0.000,0.000
- "Cholesterol",mg,--,--,0,0
- Amino Acids
- Other
- Ingredients
- "YELLOW SPLIT PEAS" Date available: 03/22/2017 Date last updated by company: 03/22/2017
+Nutrition(
+ ndb_id: 45108270, 
+ name: "YELLOW SPLIT PEAS", 
+ unit: 0.25, 
+ unit_type: "cup", 
+ eq_gram: 50.0, 
+ ingredients: ["YELLOW SPLIT PEAS"],
+ nutrition_facts: [
+    NutritionFact(name: "Energy", value: 180.0),
+    NutritionFact(name: "Protein", value: 11.0),
+    NutritionFact(name: "Total lipid (fat)", value: 1.0),
+    NutritionFact(name: "Carbohydrate, by difference", value: 32.0),
+    NutritionFact(name: "Fiber, total dietary", value: 16.0),
+    NutritionFact(name: "Sugars, total", value: 1.0),
+    NutritionFact(name: "Calcium, Ca", value: 20.0),
+    NutritionFact(name: "Iron, Fe", value: 1.08),
+    NutritionFact(name: "Sodium, Na", value: 0.0),
+    NutritionFact(name: "Vitamin C, total ascorbic acid", value: 1.2),
+    NutritionFact(name: "Vitamin A, IU", value: 0.0),
+    NutritionFact(name: "Fatty acids, total saturated", value: 0.0),
+    NutritionFact(name: "Fatty acids, total trans", value: 0.0),
+    NutritionFact(name: "Cholesterol", value: 0.0)
+ ]
+)
 */
