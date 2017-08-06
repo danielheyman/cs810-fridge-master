@@ -1,0 +1,564 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		177C2EDF1F37D3A500A87846 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177C2EDE1F37D3A500A87846 /* AppDelegate.swift */; };
+		177C2EE11F37D3A500A87846 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177C2EE01F37D3A500A87846 /* ViewController.swift */; };
+		177C2EE71F37D3A500A87846 /* FridgeMaster.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 177C2EE51F37D3A500A87846 /* FridgeMaster.xcdatamodeld */; };
+		177C2EE91F37D3A500A87846 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 177C2EE81F37D3A500A87846 /* Assets.xcassets */; };
+		177C2EEC1F37D3A500A87846 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 177C2EEA1F37D3A500A87846 /* LaunchScreen.storyboard */; };
+		177C2EF71F37D3A500A87846 /* FridgeMasterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177C2EF61F37D3A500A87846 /* FridgeMasterTests.swift */; };
+		177C2F021F37D3A500A87846 /* FridgeMasterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177C2F011F37D3A500A87846 /* FridgeMasterUITests.swift */; };
+		177C2F101F37D3C200A87846 /* Delete.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 177C2F0F1F37D3C200A87846 /* Delete.storyboard */; };
+		177C2F141F37D3DC00A87846 /* Edit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 177C2F131F37D3DC00A87846 /* Edit.storyboard */; };
+		177C2F161F37D3E800A87846 /* EditItem.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 177C2F151F37D3E800A87846 /* EditItem.storyboard */; };
+		177C2F181F37D3F000A87846 /* Inventory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 177C2F171F37D3F000A87846 /* Inventory.storyboard */; };
+		177C2F1A1F37D3FD00A87846 /* Scan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 177C2F191F37D3FD00A87846 /* Scan.storyboard */; };
+		177C2F1C1F37D40700A87846 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 177C2F1B1F37D40700A87846 /* Settings.storyboard */; };
+		177C2F1E1F37D41E00A87846 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 177C2F1D1F37D41E00A87846 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		177C2EF31F37D3A500A87846 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 177C2ED31F37D3A500A87846 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 177C2EDA1F37D3A500A87846;
+			remoteInfo = FridgeMaster;
+		};
+		177C2EFE1F37D3A500A87846 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 177C2ED31F37D3A500A87846 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 177C2EDA1F37D3A500A87846;
+			remoteInfo = FridgeMaster;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		177C2EDB1F37D3A500A87846 /* FridgeMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FridgeMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		177C2EDE1F37D3A500A87846 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		177C2EE01F37D3A500A87846 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		177C2EE61F37D3A500A87846 /* FridgeMaster.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FridgeMaster.xcdatamodel; sourceTree = "<group>"; };
+		177C2EE81F37D3A500A87846 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		177C2EEB1F37D3A500A87846 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		177C2EED1F37D3A500A87846 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		177C2EF21F37D3A500A87846 /* FridgeMasterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FridgeMasterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		177C2EF61F37D3A500A87846 /* FridgeMasterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FridgeMasterTests.swift; sourceTree = "<group>"; };
+		177C2EF81F37D3A500A87846 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		177C2EFD1F37D3A500A87846 /* FridgeMasterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FridgeMasterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		177C2F011F37D3A500A87846 /* FridgeMasterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FridgeMasterUITests.swift; sourceTree = "<group>"; };
+		177C2F031F37D3A500A87846 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		177C2F0F1F37D3C200A87846 /* Delete.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Delete.storyboard; path = "../../../ui markups - jeremy/Delete.storyboard"; sourceTree = "<group>"; };
+		177C2F131F37D3DC00A87846 /* Edit.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Edit.storyboard; path = "../../../ui markups - jeremy/Edit.storyboard"; sourceTree = "<group>"; };
+		177C2F151F37D3E800A87846 /* EditItem.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = EditItem.storyboard; path = "../../../ui markups - jeremy/EditItem.storyboard"; sourceTree = "<group>"; };
+		177C2F171F37D3F000A87846 /* Inventory.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Inventory.storyboard; path = "../../../ui markups - jeremy/Inventory.storyboard"; sourceTree = "<group>"; };
+		177C2F191F37D3FD00A87846 /* Scan.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Scan.storyboard; path = "../../../ui markups - jeremy/Scan.storyboard"; sourceTree = "<group>"; };
+		177C2F1B1F37D40700A87846 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Settings.storyboard; path = "../../../ui markups - jeremy/Settings.storyboard"; sourceTree = "<group>"; };
+		177C2F1D1F37D41E00A87846 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = "../../../ui markups - jeremy/Main.storyboard"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		177C2ED81F37D3A500A87846 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		177C2EEF1F37D3A500A87846 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		177C2EFA1F37D3A500A87846 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		177C2ED21F37D3A500A87846 = {
+			isa = PBXGroup;
+			children = (
+				177C2EDD1F37D3A500A87846 /* FridgeMaster */,
+				177C2EF51F37D3A500A87846 /* FridgeMasterTests */,
+				177C2F001F37D3A500A87846 /* FridgeMasterUITests */,
+				177C2EDC1F37D3A500A87846 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		177C2EDC1F37D3A500A87846 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				177C2EDB1F37D3A500A87846 /* FridgeMaster.app */,
+				177C2EF21F37D3A500A87846 /* FridgeMasterTests.xctest */,
+				177C2EFD1F37D3A500A87846 /* FridgeMasterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		177C2EDD1F37D3A500A87846 /* FridgeMaster */ = {
+			isa = PBXGroup;
+			children = (
+				177C2F1D1F37D41E00A87846 /* Main.storyboard */,
+				177C2F191F37D3FD00A87846 /* Scan.storyboard */,
+				177C2F1B1F37D40700A87846 /* Settings.storyboard */,
+				177C2F171F37D3F000A87846 /* Inventory.storyboard */,
+				177C2F151F37D3E800A87846 /* EditItem.storyboard */,
+				177C2F131F37D3DC00A87846 /* Edit.storyboard */,
+				177C2F0F1F37D3C200A87846 /* Delete.storyboard */,
+				177C2EDE1F37D3A500A87846 /* AppDelegate.swift */,
+				177C2EE01F37D3A500A87846 /* ViewController.swift */,
+				177C2EE81F37D3A500A87846 /* Assets.xcassets */,
+				177C2EEA1F37D3A500A87846 /* LaunchScreen.storyboard */,
+				177C2EED1F37D3A500A87846 /* Info.plist */,
+				177C2EE51F37D3A500A87846 /* FridgeMaster.xcdatamodeld */,
+			);
+			path = FridgeMaster;
+			sourceTree = "<group>";
+		};
+		177C2EF51F37D3A500A87846 /* FridgeMasterTests */ = {
+			isa = PBXGroup;
+			children = (
+				177C2EF61F37D3A500A87846 /* FridgeMasterTests.swift */,
+				177C2EF81F37D3A500A87846 /* Info.plist */,
+			);
+			path = FridgeMasterTests;
+			sourceTree = "<group>";
+		};
+		177C2F001F37D3A500A87846 /* FridgeMasterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				177C2F011F37D3A500A87846 /* FridgeMasterUITests.swift */,
+				177C2F031F37D3A500A87846 /* Info.plist */,
+			);
+			path = FridgeMasterUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		177C2EDA1F37D3A500A87846 /* FridgeMaster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 177C2F061F37D3A500A87846 /* Build configuration list for PBXNativeTarget "FridgeMaster" */;
+			buildPhases = (
+				177C2ED71F37D3A500A87846 /* Sources */,
+				177C2ED81F37D3A500A87846 /* Frameworks */,
+				177C2ED91F37D3A500A87846 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FridgeMaster;
+			productName = FridgeMaster;
+			productReference = 177C2EDB1F37D3A500A87846 /* FridgeMaster.app */;
+			productType = "com.apple.product-type.application";
+		};
+		177C2EF11F37D3A500A87846 /* FridgeMasterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 177C2F091F37D3A500A87846 /* Build configuration list for PBXNativeTarget "FridgeMasterTests" */;
+			buildPhases = (
+				177C2EEE1F37D3A500A87846 /* Sources */,
+				177C2EEF1F37D3A500A87846 /* Frameworks */,
+				177C2EF01F37D3A500A87846 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				177C2EF41F37D3A500A87846 /* PBXTargetDependency */,
+			);
+			name = FridgeMasterTests;
+			productName = FridgeMasterTests;
+			productReference = 177C2EF21F37D3A500A87846 /* FridgeMasterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		177C2EFC1F37D3A500A87846 /* FridgeMasterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 177C2F0C1F37D3A500A87846 /* Build configuration list for PBXNativeTarget "FridgeMasterUITests" */;
+			buildPhases = (
+				177C2EF91F37D3A500A87846 /* Sources */,
+				177C2EFA1F37D3A500A87846 /* Frameworks */,
+				177C2EFB1F37D3A500A87846 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				177C2EFF1F37D3A500A87846 /* PBXTargetDependency */,
+			);
+			name = FridgeMasterUITests;
+			productName = FridgeMasterUITests;
+			productReference = 177C2EFD1F37D3A500A87846 /* FridgeMasterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		177C2ED31F37D3A500A87846 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Matthew Gomez";
+				TargetAttributes = {
+					177C2EDA1F37D3A500A87846 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 6N7ULU8E68;
+						ProvisioningStyle = Automatic;
+					};
+					177C2EF11F37D3A500A87846 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 177C2EDA1F37D3A500A87846;
+					};
+					177C2EFC1F37D3A500A87846 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 177C2EDA1F37D3A500A87846;
+					};
+				};
+			};
+			buildConfigurationList = 177C2ED61F37D3A500A87846 /* Build configuration list for PBXProject "FridgeMaster" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 177C2ED21F37D3A500A87846;
+			productRefGroup = 177C2EDC1F37D3A500A87846 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				177C2EDA1F37D3A500A87846 /* FridgeMaster */,
+				177C2EF11F37D3A500A87846 /* FridgeMasterTests */,
+				177C2EFC1F37D3A500A87846 /* FridgeMasterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		177C2ED91F37D3A500A87846 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				177C2EEC1F37D3A500A87846 /* LaunchScreen.storyboard in Resources */,
+				177C2F141F37D3DC00A87846 /* Edit.storyboard in Resources */,
+				177C2EE91F37D3A500A87846 /* Assets.xcassets in Resources */,
+				177C2F1A1F37D3FD00A87846 /* Scan.storyboard in Resources */,
+				177C2F181F37D3F000A87846 /* Inventory.storyboard in Resources */,
+				177C2F1C1F37D40700A87846 /* Settings.storyboard in Resources */,
+				177C2F1E1F37D41E00A87846 /* Main.storyboard in Resources */,
+				177C2F101F37D3C200A87846 /* Delete.storyboard in Resources */,
+				177C2F161F37D3E800A87846 /* EditItem.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		177C2EF01F37D3A500A87846 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		177C2EFB1F37D3A500A87846 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		177C2ED71F37D3A500A87846 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				177C2EE71F37D3A500A87846 /* FridgeMaster.xcdatamodeld in Sources */,
+				177C2EE11F37D3A500A87846 /* ViewController.swift in Sources */,
+				177C2EDF1F37D3A500A87846 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		177C2EEE1F37D3A500A87846 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				177C2EF71F37D3A500A87846 /* FridgeMasterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		177C2EF91F37D3A500A87846 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				177C2F021F37D3A500A87846 /* FridgeMasterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		177C2EF41F37D3A500A87846 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 177C2EDA1F37D3A500A87846 /* FridgeMaster */;
+			targetProxy = 177C2EF31F37D3A500A87846 /* PBXContainerItemProxy */;
+		};
+		177C2EFF1F37D3A500A87846 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 177C2EDA1F37D3A500A87846 /* FridgeMaster */;
+			targetProxy = 177C2EFE1F37D3A500A87846 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		177C2EEA1F37D3A500A87846 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				177C2EEB1F37D3A500A87846 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		177C2F041F37D3A500A87846 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		177C2F051F37D3A500A87846 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		177C2F071F37D3A500A87846 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6N7ULU8E68;
+				INFOPLIST_FILE = FridgeMaster/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gomez.FridgeMaster;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		177C2F081F37D3A500A87846 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6N7ULU8E68;
+				INFOPLIST_FILE = FridgeMaster/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gomez.FridgeMaster;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		177C2F0A1F37D3A500A87846 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FridgeMasterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gomez.FridgeMasterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FridgeMaster.app/FridgeMaster";
+			};
+			name = Debug;
+		};
+		177C2F0B1F37D3A500A87846 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FridgeMasterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gomez.FridgeMasterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FridgeMaster.app/FridgeMaster";
+			};
+			name = Release;
+		};
+		177C2F0D1F37D3A500A87846 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = FridgeMasterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gomez.FridgeMasterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = FridgeMaster;
+			};
+			name = Debug;
+		};
+		177C2F0E1F37D3A500A87846 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = FridgeMasterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gomez.FridgeMasterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = FridgeMaster;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		177C2ED61F37D3A500A87846 /* Build configuration list for PBXProject "FridgeMaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				177C2F041F37D3A500A87846 /* Debug */,
+				177C2F051F37D3A500A87846 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		177C2F061F37D3A500A87846 /* Build configuration list for PBXNativeTarget "FridgeMaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				177C2F071F37D3A500A87846 /* Debug */,
+				177C2F081F37D3A500A87846 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		177C2F091F37D3A500A87846 /* Build configuration list for PBXNativeTarget "FridgeMasterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				177C2F0A1F37D3A500A87846 /* Debug */,
+				177C2F0B1F37D3A500A87846 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		177C2F0C1F37D3A500A87846 /* Build configuration list for PBXNativeTarget "FridgeMasterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				177C2F0D1F37D3A500A87846 /* Debug */,
+				177C2F0E1F37D3A500A87846 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		177C2EE51F37D3A500A87846 /* FridgeMaster.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				177C2EE61F37D3A500A87846 /* FridgeMaster.xcdatamodel */,
+			);
+			currentVersion = 177C2EE61F37D3A500A87846 /* FridgeMaster.xcdatamodel */;
+			path = FridgeMaster.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 177C2ED31F37D3A500A87846 /* Project object */;
+}
