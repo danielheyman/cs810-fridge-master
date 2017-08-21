@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1766B6C31F4BA17F00F88770 /* NewItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1766B6C21F4BA17F00F88770 /* NewItemViewController.swift */; };
 		177C2EDF1F37D3A500A87846 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177C2EDE1F37D3A500A87846 /* AppDelegate.swift */; };
 		177C2EE11F37D3A500A87846 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177C2EE01F37D3A500A87846 /* ViewController.swift */; };
 		177C2EE71F37D3A500A87846 /* FridgeMaster.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 177C2EE51F37D3A500A87846 /* FridgeMaster.xcdatamodeld */; };
@@ -69,6 +70,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1766B6C21F4BA17F00F88770 /* NewItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewItemViewController.swift; sourceTree = "<group>"; };
 		177C2EDB1F37D3A500A87846 /* FridgeMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FridgeMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		177C2EDE1F37D3A500A87846 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		177C2EE01F37D3A500A87846 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 		177C2EDD1F37D3A500A87846 /* FridgeMaster */ = {
 			isa = PBXGroup;
 			children = (
+				1766B6C21F4BA17F00F88770 /* NewItemViewController.swift */,
 				17A74D441F4B4B5A008A7151 /* BarcodeReaderViewController.swift */,
 				17EACD7C1F37D51F00BA68D2 /* Main.storyboard */,
 				177C2EDE1F37D3A500A87846 /* AppDelegate.swift */,
@@ -407,6 +410,7 @@
 			files = (
 				17A74DA61F4B4D28008A7151 /* BarcodeReaderViewController.swift in Sources */,
 				177C2EE71F37D3A500A87846 /* FridgeMaster.xcdatamodeld in Sources */,
+				1766B6C31F4BA17F00F88770 /* NewItemViewController.swift in Sources */,
 				177C2EE11F37D3A500A87846 /* ViewController.swift in Sources */,
 				177C2EDF1F37D3A500A87846 /* AppDelegate.swift in Sources */,
 			);

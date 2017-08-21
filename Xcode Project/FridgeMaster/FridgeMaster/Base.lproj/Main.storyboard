@@ -27,7 +27,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Inventory"/>
                                 <connections>
-                                    <segue destination="xF6-hw-60p" kind="presentation" id="f8i-V0-Uzx"/>
+                                    <segue destination="xF6-hw-60p" kind="show" id="f8i-V0-Uzx"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lIr-e1-I0l">
@@ -35,7 +35,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Scan New"/>
                                 <connections>
-                                    <segue destination="tPa-4o-8DH" kind="presentation" id="I56-Yw-M6N"/>
+                                    <segue destination="tPa-4o-8DH" kind="show" id="I56-Yw-M6N"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Jp-Kv-Akn">
@@ -43,7 +43,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Settings"/>
                                 <connections>
-                                    <segue destination="oyc-7Y-QVQ" kind="presentation" id="jvH-xm-woX"/>
+                                    <segue destination="oyc-7Y-QVQ" kind="show" id="jvH-xm-woX"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to Fridge Master!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5xC-Xb-TOe">
@@ -146,7 +146,7 @@
                                                 <state key="normal" title="Back"/>
                                             </button>
                                             <connections>
-                                                <segue destination="xF6-hw-60p" kind="showDetail" id="JlS-Cu-fSn"/>
+                                                <segue destination="xF6-hw-60p" kind="show" action="showDetailViewController:sender:" id="JlS-Cu-fSn"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -237,16 +237,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZOE-Xy-SEG">
                                 <rect key="frame" x="16" y="132" width="167" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Scan New"/>
+                                <state key="normal" title="Scan New Item"/>
                                 <connections>
                                     <segue destination="tPa-4o-8DH" kind="show" id="UDO-pR-1Mp"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ynz-zl-8Cq">
-                                <rect key="frame" x="191" y="135" width="154" height="30"/>
-                                <state key="normal" title="Remove"/>
-                                <connections>
-                                    <segue destination="XeN-me-eZj" kind="presentation" id="wBO-pn-NIj"/>
                                 </connections>
                             </button>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C9Z-QM-HvN">
@@ -261,7 +254,7 @@
                                                 <state key="normal" title="Back"/>
                                             </button>
                                             <connections>
-                                                <segue destination="BYZ-38-t0r" kind="show" action="showDetailViewController:sender:" id="hQT-O3-Pfy"/>
+                                                <segue destination="BYZ-38-t0r" kind="show" action="showDetailViewController:sender:" id="87d-j9-3ag"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -274,6 +267,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ynz-zl-8Cq">
+                                <rect key="frame" x="191" y="133" width="154" height="30"/>
+                                <state key="normal" title="Remove"/>
+                                <connections>
+                                    <segue destination="XeN-me-eZj" kind="show" id="wBO-pn-NIj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -324,7 +324,7 @@
                                                 <state key="normal" title="Back"/>
                                             </button>
                                             <connections>
-                                                <segue destination="xF6-hw-60p" kind="showDetail" id="KQ5-qS-Y3C"/>
+                                                <segue destination="xF6-hw-60p" kind="show" action="showDetailViewController:sender:" id="KQ5-qS-Y3C"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -396,7 +396,7 @@
         <!--New Item View Controller-->
         <scene sceneID="JXM-fL-PoQ">
             <objects>
-                <viewController title="New Item View Controller" id="3Hw-Cr-Fag" sceneMemberID="viewController">
+                <viewController title="New Item View Controller" id="3Hw-Cr-Fag" customClass="NewItemViewController" customModule="FridgeMaster" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fJn-XB-Z28"/>
                         <viewControllerLayoutGuide type="bottom" id="pcA-LK-DoH"/>
@@ -409,14 +409,14 @@
                                 <rect key="frame" x="53" y="45" width="84" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Cancel"/>
-                                <connections>
-                                    <segue destination="xF6-hw-60p" kind="show" id="TVf-YA-CHn"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D6p-wF-AWR">
                                 <rect key="frame" x="241" y="50" width="66" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Create"/>
+                                <connections>
+                                    <segue destination="xF6-hw-60p" kind="show" id="YGH-Rc-34R"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cQ3-Fe-ZIp">
                                 <rect key="frame" x="40" y="252" width="292" height="30"/>
@@ -477,6 +477,9 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="upcField" destination="2eW-F3-bFA" id="cx8-fx-vzw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1qi-CG-XyJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -484,8 +487,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="YGH-Rc-34R"/>
         <segue reference="I56-Yw-M6N"/>
         <segue reference="EFM-co-Lct"/>
-        <segue reference="TVf-YA-CHn"/>
     </inferredMetricsTieBreakers>
 </document>

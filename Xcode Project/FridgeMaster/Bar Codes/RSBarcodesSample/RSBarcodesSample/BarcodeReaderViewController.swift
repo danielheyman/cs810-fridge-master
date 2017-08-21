@@ -46,12 +46,17 @@ class BarcodeReaderViewController: RSCodeReaderViewController {
                 for barcode in barcodes {
                     self.barcode = barcode.stringValue
                     print("Barcode found: type= " + barcode.type + " value= " + barcode.stringValue)
-                    self.performSegue(withIdentifier: "newItemSegue", sender: nil)
+                    self.performSegue(withIdentifier: "newItemSegue", sender: self)
                     //self.reset();
                     return;
                 }
             }
         }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        var secondController = segue.destination as! NewItemViewController
+        secondController.upcString = barcode
     }
     
     func reset() {
