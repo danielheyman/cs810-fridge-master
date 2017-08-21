@@ -16,7 +16,7 @@ import AVFoundation
 import RSBarcodes
 
 class BarcodeReaderViewController: RSCodeReaderViewController {
-    
+
     @IBOutlet var toggle: UIButton!
     @IBAction func toggle(_ sender: AnyObject?) {
         print(self.toggleTorch());
@@ -46,13 +46,9 @@ class BarcodeReaderViewController: RSCodeReaderViewController {
                 for barcode in barcodes {
                     self.barcode = barcode.stringValue
                     print("Barcode found: type= " + barcode.type + " value= " + barcode.stringValue)
-                    let alert = UIAlertController(title: "Barcode Found", message: "Value is " + barcode.stringValue, preferredStyle: UIAlertControllerStyle.alert)
-                    let ok = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) { (action: UIAlertAction!) -> Void in
-                        self.reset();
-                    }
-                    alert.addAction(ok)
-                    self.present(alert, animated: true, completion: nil)
-                    break
+                    self.performSegue(withIdentifier: "newItemSegue", sender: nil)
+                    //self.reset();
+                    return;
                 }
             }
         }

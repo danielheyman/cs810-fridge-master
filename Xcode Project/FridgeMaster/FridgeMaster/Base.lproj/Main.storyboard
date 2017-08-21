@@ -283,6 +283,9 @@
                             <constraint firstItem="fL8-cp-8rz" firstAttribute="top" secondItem="NVy-ol-y9j" secondAttribute="bottom" constant="20" id="qL3-Li-Qw9"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="Mj6-EF-jfh" kind="show" identifier="editItemSegue" id="Nt5-yO-Ew2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uln-2f-for" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -383,16 +386,17 @@
                     <navigationItem key="navigationItem" id="PjH-OR-efc"/>
                     <connections>
                         <outlet property="toggle" destination="W2g-hI-KCY" id="wPL-UC-V4V"/>
+                        <segue destination="3Hw-Cr-Fag" kind="show" identifier="newItemSegue" id="S1u-XP-KyZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ege-gT-3hS" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="994" y="123"/>
         </scene>
-        <!--View Controller-->
+        <!--New Item View Controller-->
         <scene sceneID="JXM-fL-PoQ">
             <objects>
-                <viewController id="3Hw-Cr-Fag" sceneMemberID="viewController">
+                <viewController title="New Item View Controller" id="3Hw-Cr-Fag" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fJn-XB-Z28"/>
                         <viewControllerLayoutGuide type="bottom" id="pcA-LK-DoH"/>
@@ -480,8 +484,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="I56-Yw-M6N"/>
+        <segue reference="EFM-co-Lct"/>
         <segue reference="TVf-YA-CHn"/>
-        <segue reference="hQT-O3-Pfy"/>
-        <segue reference="UDO-pR-1Mp"/>
     </inferredMetricsTieBreakers>
 </document>
