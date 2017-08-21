@@ -14,6 +14,15 @@
 		177C2EEC1F37D3A500A87846 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 177C2EEA1F37D3A500A87846 /* LaunchScreen.storyboard */; };
 		177C2EF71F37D3A500A87846 /* FridgeMasterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177C2EF61F37D3A500A87846 /* FridgeMasterTests.swift */; };
 		177C2F021F37D3A500A87846 /* FridgeMasterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177C2F011F37D3A500A87846 /* FridgeMasterUITests.swift */; };
+		17A74D6B1F4B4B5A008A7151 /* home-hero-swift-hero.png in Resources */ = {isa = PBXBuildFile; fileRef = 17A74D391F4B4B5A008A7151 /* home-hero-swift-hero.png */; };
+		17A74D721F4B4B5A008A7151 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17A74D451F4B4B5A008A7151 /* Main.storyboard */; };
+		17A74D741F4B4B5A008A7151 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 17A74D481F4B4B5A008A7151 /* Info.plist */; };
+		17A74D751F4B4B5A008A7151 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17A74D491F4B4B5A008A7151 /* Launch Screen.storyboard */; };
+		17A74D781F4B4B5A008A7151 /* ci.sh in Resources */ = {isa = PBXBuildFile; fileRef = 17A74D521F4B4B5A008A7151 /* ci.sh */; };
+		17A74D7A1F4B4B5A008A7151 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 17A74D561F4B4B5A008A7151 /* Info.plist */; };
+		17A74DA21F4B4C83008A7151 /* RSBarcodes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17A74DA11F4B4C15008A7151 /* RSBarcodes.framework */; };
+		17A74DA31F4B4C83008A7151 /* RSBarcodes.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 17A74DA11F4B4C15008A7151 /* RSBarcodes.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		17A74DA61F4B4D28008A7151 /* BarcodeReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A74D441F4B4B5A008A7151 /* BarcodeReaderViewController.swift */; };
 		17EACD781F37D50C00BA68D2 /* EditItem.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17EACD761F37D50C00BA68D2 /* EditItem.storyboard */; };
 		17EACD7E1F37D51F00BA68D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17EACD7C1F37D51F00BA68D2 /* Main.storyboard */; };
 /* End PBXBuildFile section */
@@ -33,7 +42,35 @@
 			remoteGlobalIDString = 177C2EDA1F37D3A500A87846;
 			remoteInfo = FridgeMaster;
 		};
+		17A74DA01F4B4C15008A7151 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17A74D9C1F4B4C15008A7151 /* RSBarcodes.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D08336371A202E81004EE128;
+			remoteInfo = RSBarcodes;
+		};
+		17A74DA41F4B4C83008A7151 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17A74D9C1F4B4C15008A7151 /* RSBarcodes.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D08336361A202E81004EE128;
+			remoteInfo = RSBarcodes;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		17A74D9B1F4B4B72008A7151 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				17A74DA31F4B4C83008A7151 /* RSBarcodes.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		177C2EDB1F37D3A500A87846 /* FridgeMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FridgeMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +86,37 @@
 		177C2EFD1F37D3A500A87846 /* FridgeMasterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FridgeMasterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		177C2F011F37D3A500A87846 /* FridgeMasterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FridgeMasterUITests.swift; sourceTree = "<group>"; };
 		177C2F031F37D3A500A87846 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17A74D391F4B4B5A008A7151 /* home-hero-swift-hero.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home-hero-swift-hero.png"; sourceTree = "<group>"; };
+		17A74D431F4B4B5A008A7151 /* BarcodeDisplayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarcodeDisplayViewController.swift; sourceTree = "<group>"; };
+		17A74D441F4B4B5A008A7151 /* BarcodeReaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarcodeReaderViewController.swift; sourceTree = "<group>"; };
+		17A74D461F4B4B5A008A7151 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		17A74D481F4B4B5A008A7151 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17A74D491F4B4B5A008A7151 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		17A74D521F4B4B5A008A7151 /* ci.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = ci.sh; sourceTree = "<group>"; };
+		17A74D541F4B4B5A008A7151 /* ContextMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContextMaker.h; sourceTree = "<group>"; };
+		17A74D551F4B4B5A008A7151 /* ContextMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContextMaker.m; sourceTree = "<group>"; };
+		17A74D561F4B4B5A008A7151 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17A74D571F4B4B5A008A7151 /* RSBarcodes-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RSBarcodes-Bridging-Header.h"; sourceTree = "<group>"; };
+		17A74D581F4B4B5A008A7151 /* RSCode128Generator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSCode128Generator.swift; sourceTree = "<group>"; };
+		17A74D591F4B4B5A008A7151 /* RSCode39Generator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSCode39Generator.swift; sourceTree = "<group>"; };
+		17A74D5A1F4B4B5A008A7151 /* RSCode39Mod43Generator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSCode39Mod43Generator.swift; sourceTree = "<group>"; };
+		17A74D5B1F4B4B5A008A7151 /* RSCode93Generator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSCode93Generator.swift; sourceTree = "<group>"; };
+		17A74D5C1F4B4B5A008A7151 /* RSCodeDataMatrixGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSCodeDataMatrixGenerator.swift; sourceTree = "<group>"; };
+		17A74D5D1F4B4B5A008A7151 /* RSCodeGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSCodeGenerator.swift; sourceTree = "<group>"; };
+		17A74D5E1F4B4B5A008A7151 /* RSCodeLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSCodeLayer.swift; sourceTree = "<group>"; };
+		17A74D5F1F4B4B5A008A7151 /* RSCodeReaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSCodeReaderViewController.swift; sourceTree = "<group>"; };
+		17A74D601F4B4B5A008A7151 /* RSCornersLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSCornersLayer.swift; sourceTree = "<group>"; };
+		17A74D611F4B4B5A008A7151 /* RSEANGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSEANGenerator.swift; sourceTree = "<group>"; };
+		17A74D621F4B4B5A008A7151 /* RSExtendedCode39Generator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSExtendedCode39Generator.swift; sourceTree = "<group>"; };
+		17A74D631F4B4B5A008A7151 /* RSFocusMarkLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSFocusMarkLayer.swift; sourceTree = "<group>"; };
+		17A74D641F4B4B5A008A7151 /* RSITF14Generator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSITF14Generator.swift; sourceTree = "<group>"; };
+		17A74D651F4B4B5A008A7151 /* RSITFGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSITFGenerator.swift; sourceTree = "<group>"; };
+		17A74D661F4B4B5A008A7151 /* RSUnifiedCodeGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSUnifiedCodeGenerator.swift; sourceTree = "<group>"; };
+		17A74D671F4B4B5A008A7151 /* RSUnifiedCodeValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSUnifiedCodeValidator.swift; sourceTree = "<group>"; };
+		17A74D681F4B4B5A008A7151 /* RSUPCEGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSUPCEGenerator.swift; sourceTree = "<group>"; };
+		17A74D691F4B4B5A008A7151 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		17A74D6A1F4B4B5A008A7151 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		17A74D9C1F4B4C15008A7151 /* RSBarcodes.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = RSBarcodes.xcodeproj; sourceTree = "<group>"; };
 		17EACD771F37D50C00BA68D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/EditItem.storyboard; sourceTree = "<group>"; };
 		17EACD7D1F37D51F00BA68D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17A74DA21F4B4C83008A7151 /* RSBarcodes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +150,7 @@
 		177C2ED21F37D3A500A87846 = {
 			isa = PBXGroup;
 			children = (
+				17A74D381F4B4B5A008A7151 /* Bar Codes */,
 				177C2EDD1F37D3A500A87846 /* FridgeMaster */,
 				177C2EF51F37D3A500A87846 /* FridgeMasterTests */,
 				177C2F001F37D3A500A87846 /* FridgeMasterUITests */,
@@ -131,6 +201,84 @@
 			path = FridgeMasterUITests;
 			sourceTree = "<group>";
 		};
+		17A74D381F4B4B5A008A7151 /* Bar Codes */ = {
+			isa = PBXGroup;
+			children = (
+				17A74D9C1F4B4C15008A7151 /* RSBarcodes.xcodeproj */,
+				17A74D391F4B4B5A008A7151 /* home-hero-swift-hero.png */,
+				17A74D401F4B4B5A008A7151 /* RSBarcodesSample */,
+				17A74D511F4B4B5A008A7151 /* Scripts */,
+				17A74D531F4B4B5A008A7151 /* Source */,
+			);
+			path = "Bar Codes";
+			sourceTree = "<group>";
+		};
+		17A74D401F4B4B5A008A7151 /* RSBarcodesSample */ = {
+			isa = PBXGroup;
+			children = (
+				17A74D411F4B4B5A008A7151 /* RSBarcodesSample */,
+			);
+			path = RSBarcodesSample;
+			sourceTree = "<group>";
+		};
+		17A74D411F4B4B5A008A7151 /* RSBarcodesSample */ = {
+			isa = PBXGroup;
+			children = (
+				17A74D431F4B4B5A008A7151 /* BarcodeDisplayViewController.swift */,
+				17A74D441F4B4B5A008A7151 /* BarcodeReaderViewController.swift */,
+				17A74D451F4B4B5A008A7151 /* Main.storyboard */,
+				17A74D481F4B4B5A008A7151 /* Info.plist */,
+				17A74D491F4B4B5A008A7151 /* Launch Screen.storyboard */,
+			);
+			path = RSBarcodesSample;
+			sourceTree = "<group>";
+		};
+		17A74D511F4B4B5A008A7151 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				17A74D521F4B4B5A008A7151 /* ci.sh */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
+		17A74D531F4B4B5A008A7151 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				17A74D541F4B4B5A008A7151 /* ContextMaker.h */,
+				17A74D551F4B4B5A008A7151 /* ContextMaker.m */,
+				17A74D561F4B4B5A008A7151 /* Info.plist */,
+				17A74D571F4B4B5A008A7151 /* RSBarcodes-Bridging-Header.h */,
+				17A74D581F4B4B5A008A7151 /* RSCode128Generator.swift */,
+				17A74D591F4B4B5A008A7151 /* RSCode39Generator.swift */,
+				17A74D5A1F4B4B5A008A7151 /* RSCode39Mod43Generator.swift */,
+				17A74D5B1F4B4B5A008A7151 /* RSCode93Generator.swift */,
+				17A74D5C1F4B4B5A008A7151 /* RSCodeDataMatrixGenerator.swift */,
+				17A74D5D1F4B4B5A008A7151 /* RSCodeGenerator.swift */,
+				17A74D5E1F4B4B5A008A7151 /* RSCodeLayer.swift */,
+				17A74D5F1F4B4B5A008A7151 /* RSCodeReaderViewController.swift */,
+				17A74D601F4B4B5A008A7151 /* RSCornersLayer.swift */,
+				17A74D611F4B4B5A008A7151 /* RSEANGenerator.swift */,
+				17A74D621F4B4B5A008A7151 /* RSExtendedCode39Generator.swift */,
+				17A74D631F4B4B5A008A7151 /* RSFocusMarkLayer.swift */,
+				17A74D641F4B4B5A008A7151 /* RSITF14Generator.swift */,
+				17A74D651F4B4B5A008A7151 /* RSITFGenerator.swift */,
+				17A74D661F4B4B5A008A7151 /* RSUnifiedCodeGenerator.swift */,
+				17A74D671F4B4B5A008A7151 /* RSUnifiedCodeValidator.swift */,
+				17A74D681F4B4B5A008A7151 /* RSUPCEGenerator.swift */,
+				17A74D691F4B4B5A008A7151 /* StringExtension.swift */,
+				17A74D6A1F4B4B5A008A7151 /* UIColorExtension.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		17A74D9D1F4B4C15008A7151 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17A74DA11F4B4C15008A7151 /* RSBarcodes.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,10 +289,12 @@
 				177C2ED71F37D3A500A87846 /* Sources */,
 				177C2ED81F37D3A500A87846 /* Frameworks */,
 				177C2ED91F37D3A500A87846 /* Resources */,
+				17A74D9B1F4B4B72008A7151 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				17A74DA51F4B4C83008A7151 /* PBXTargetDependency */,
 			);
 			name = FridgeMaster;
 			productName = FridgeMaster;
@@ -225,6 +375,12 @@
 			mainGroup = 177C2ED21F37D3A500A87846;
 			productRefGroup = 177C2EDC1F37D3A500A87846 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 17A74D9D1F4B4C15008A7151 /* Products */;
+					ProjectRef = 17A74D9C1F4B4C15008A7151 /* RSBarcodes.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				177C2EDA1F37D3A500A87846 /* FridgeMaster */,
@@ -234,15 +390,31 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		17A74DA11F4B4C15008A7151 /* RSBarcodes.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RSBarcodes.framework;
+			remoteRef = 17A74DA01F4B4C15008A7151 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		177C2ED91F37D3A500A87846 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17A74D721F4B4B5A008A7151 /* Main.storyboard in Resources */,
+				17A74D741F4B4B5A008A7151 /* Info.plist in Resources */,
 				17EACD7E1F37D51F00BA68D2 /* Main.storyboard in Resources */,
+				17A74D6B1F4B4B5A008A7151 /* home-hero-swift-hero.png in Resources */,
+				17A74D781F4B4B5A008A7151 /* ci.sh in Resources */,
 				177C2EEC1F37D3A500A87846 /* LaunchScreen.storyboard in Resources */,
 				177C2EE91F37D3A500A87846 /* Assets.xcassets in Resources */,
+				17A74D751F4B4B5A008A7151 /* Launch Screen.storyboard in Resources */,
 				17EACD781F37D50C00BA68D2 /* EditItem.storyboard in Resources */,
+				17A74D7A1F4B4B5A008A7151 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +439,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17A74DA61F4B4D28008A7151 /* BarcodeReaderViewController.swift in Sources */,
 				177C2EE71F37D3A500A87846 /* FridgeMaster.xcdatamodeld in Sources */,
 				177C2EE11F37D3A500A87846 /* ViewController.swift in Sources */,
 				177C2EDF1F37D3A500A87846 /* AppDelegate.swift in Sources */,
@@ -302,6 +475,11 @@
 			target = 177C2EDA1F37D3A500A87846 /* FridgeMaster */;
 			targetProxy = 177C2EFE1F37D3A500A87846 /* PBXContainerItemProxy */;
 		};
+		17A74DA51F4B4C83008A7151 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RSBarcodes;
+			targetProxy = 17A74DA41F4B4C83008A7151 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -311,6 +489,14 @@
 				177C2EEB1F37D3A500A87846 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		17A74D451F4B4B5A008A7151 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17A74D461F4B4B5A008A7151 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		17EACD761F37D50C00BA68D2 /* EditItem.storyboard */ = {
@@ -428,6 +614,7 @@
 		177C2F071F37D3A500A87846 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6N7ULU8E68;
 				INFOPLIST_FILE = FridgeMaster/Info.plist;
@@ -442,6 +629,7 @@
 		177C2F081F37D3A500A87846 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6N7ULU8E68;
 				INFOPLIST_FILE = FridgeMaster/Info.plist;

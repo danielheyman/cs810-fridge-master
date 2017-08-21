@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -27,7 +27,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Inventory"/>
                                 <connections>
-                                    <segue destination="xF6-hw-60p" kind="show" id="f8i-V0-Uzx"/>
+                                    <segue destination="xF6-hw-60p" kind="presentation" id="f8i-V0-Uzx"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lIr-e1-I0l">
@@ -35,7 +35,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Scan New"/>
                                 <connections>
-                                    <segue destination="ZiO-t3-lr2" kind="show" id="rLa-hd-Asz"/>
+                                    <segue destination="tPa-4o-8DH" kind="presentation" id="I56-Yw-M6N"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Jp-Kv-Akn">
@@ -43,7 +43,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Settings"/>
                                 <connections>
-                                    <segue destination="oyc-7Y-QVQ" kind="show" id="jvH-xm-woX"/>
+                                    <segue destination="oyc-7Y-QVQ" kind="presentation" id="jvH-xm-woX"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to Fridge Master!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5xC-Xb-TOe">
@@ -61,50 +61,10 @@
             </objects>
             <point key="canvasLocation" x="-98.400000000000006" y="122.78860569715144"/>
         </scene>
-        <!--Scan-->
-        <scene sceneID="gwc-nZ-agP">
-            <objects>
-                <viewController id="ZiO-t3-lr2" userLabel="Scan" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="p1D-Bd-Puy"/>
-                        <viewControllerLayoutGuide type="bottom" id="Sit-Ra-4za"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="o8m-G8-GNt">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vmJ-4A-S6B">
-                                <rect key="frame" x="170" y="587" width="35" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Scan"/>
-                            </button>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZRa-NF-UAx">
-                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="New Item" id="V66-ip-s7o">
-                                        <barButtonItem key="leftBarButtonItem" style="plain" id="6DV-qf-2Bi">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zzS-Ki-wgh">
-                                                <rect key="frame" x="16" y="5" width="50" height="33"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Back"/>
-                                            </button>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qQ8-Ug-UsB" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="934" y="123"/>
-        </scene>
-        <!--View Controller-->
+        <!--Edit Item-->
         <scene sceneID="nAn-I2-soq">
             <objects>
-                <viewController id="Mj6-EF-jfh" sceneMemberID="viewController">
+                <viewController title="Edit Item" id="Mj6-EF-jfh" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QdR-lS-JgN"/>
                         <viewControllerLayoutGuide type="bottom" id="Yrc-fY-p7q"/>
@@ -240,6 +200,9 @@
                                                 <rect key="frame" x="16" y="5" width="50" height="33"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Back"/>
+                                                <connections>
+                                                    <segue destination="BYZ-38-t0r" kind="show" action="showDetailViewController:sender:" id="6u3-hR-UZo"/>
+                                                </connections>
                                             </button>
                                         </barButtonItem>
                                     </navigationItem>
@@ -265,7 +228,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NVy-ol-y9j">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NVy-ol-y9j">
                                 <rect key="frame" x="16" y="184" width="343" height="463"/>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZOE-Xy-SEG">
@@ -273,14 +236,14 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Scan New"/>
                                 <connections>
-                                    <segue destination="ZiO-t3-lr2" kind="show" id="66M-pf-2CR"/>
+                                    <segue destination="tPa-4o-8DH" kind="show" id="UDO-pR-1Mp"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ynz-zl-8Cq">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ynz-zl-8Cq">
                                 <rect key="frame" x="191" y="135" width="154" height="30"/>
                                 <state key="normal" title="Remove"/>
                                 <connections>
-                                    <segue destination="XeN-me-eZj" kind="show" id="wBO-pn-NIj"/>
+                                    <segue destination="XeN-me-eZj" kind="presentation" id="wBO-pn-NIj"/>
                                 </connections>
                             </button>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C9Z-QM-HvN">
@@ -294,6 +257,9 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Back"/>
                                             </button>
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" action="showDetailViewController:sender:" id="hQT-O3-Pfy"/>
+                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -351,6 +317,9 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Back"/>
                                             </button>
+                                            <connections>
+                                                <segue destination="xF6-hw-60p" kind="showDetail" id="KQ5-qS-Y3C"/>
+                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -363,8 +332,64 @@
             </objects>
             <point key="canvasLocation" x="1764" y="-937"/>
         </scene>
+        <!--Barcode Reader View Controller-->
+        <scene sceneID="gCR-IX-eu5">
+            <objects>
+                <viewController id="tPa-4o-8DH" customClass="BarcodeReaderViewController" customModule="FridgeMaster" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PKA-RG-TmD"/>
+                        <viewControllerLayoutGuide type="bottom" id="UrE-7R-Msx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5H6-j5-R8s">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W2g-hI-KCY">
+                                <rect key="frame" x="0.0" y="567" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Rwe-DS-bZO"/>
+                                    <constraint firstAttribute="height" constant="100" id="dl6-aW-HqD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Toggle">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="disabled">
+                                    <color key="titleColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="toggle:" destination="tPa-4o-8DH" eventType="touchUpInside" id="xWD-XQ-gEN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1DY-9P-t0K">
+                                <rect key="frame" x="27" y="20" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" action="showDetailViewController:sender:" id="EFM-co-Lct"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="UrE-7R-Msx" firstAttribute="top" secondItem="W2g-hI-KCY" secondAttribute="bottom" id="1vD-kK-oWK"/>
+                            <constraint firstItem="W2g-hI-KCY" firstAttribute="leading" secondItem="5H6-j5-R8s" secondAttribute="leading" id="vVs-ah-pPo"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="PjH-OR-efc"/>
+                    <connections>
+                        <outlet property="toggle" destination="W2g-hI-KCY" id="wPL-UC-V4V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ege-gT-3hS" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="994" y="123"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="66M-pf-2CR"/>
+        <segue reference="hQT-O3-Pfy"/>
+        <segue reference="f8i-V0-Uzx"/>
+        <segue reference="UDO-pR-1Mp"/>
     </inferredMetricsTieBreakers>
 </document>
