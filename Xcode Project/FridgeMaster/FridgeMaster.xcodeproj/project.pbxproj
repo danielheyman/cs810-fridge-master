@@ -14,13 +14,8 @@
 		177C2EEC1F37D3A500A87846 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 177C2EEA1F37D3A500A87846 /* LaunchScreen.storyboard */; };
 		177C2EF71F37D3A500A87846 /* FridgeMasterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177C2EF61F37D3A500A87846 /* FridgeMasterTests.swift */; };
 		177C2F021F37D3A500A87846 /* FridgeMasterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177C2F011F37D3A500A87846 /* FridgeMasterUITests.swift */; };
-		17EACD721F37D4F800BA68D2 /* Delete.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17EACD701F37D4F800BA68D2 /* Delete.storyboard */; };
-		17EACD751F37D50500BA68D2 /* Edit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17EACD731F37D50500BA68D2 /* Edit.storyboard */; };
 		17EACD781F37D50C00BA68D2 /* EditItem.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17EACD761F37D50C00BA68D2 /* EditItem.storyboard */; };
-		17EACD7B1F37D51400BA68D2 /* Inventory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17EACD791F37D51400BA68D2 /* Inventory.storyboard */; };
 		17EACD7E1F37D51F00BA68D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17EACD7C1F37D51F00BA68D2 /* Main.storyboard */; };
-		17EACD811F37D52700BA68D2 /* Scan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17EACD7F1F37D52700BA68D2 /* Scan.storyboard */; };
-		17EACD841F37D52F00BA68D2 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17EACD821F37D52F00BA68D2 /* Settings.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,13 +49,8 @@
 		177C2EFD1F37D3A500A87846 /* FridgeMasterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FridgeMasterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		177C2F011F37D3A500A87846 /* FridgeMasterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FridgeMasterUITests.swift; sourceTree = "<group>"; };
 		177C2F031F37D3A500A87846 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		17EACD711F37D4F800BA68D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Delete.storyboard; sourceTree = "<group>"; };
-		17EACD741F37D50500BA68D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Edit.storyboard; sourceTree = "<group>"; };
 		17EACD771F37D50C00BA68D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/EditItem.storyboard; sourceTree = "<group>"; };
-		17EACD7A1F37D51400BA68D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Inventory.storyboard; sourceTree = "<group>"; };
 		17EACD7D1F37D51F00BA68D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		17EACD801F37D52700BA68D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Scan.storyboard; sourceTree = "<group>"; };
-		17EACD831F37D52F00BA68D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Settings.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,13 +101,8 @@
 		177C2EDD1F37D3A500A87846 /* FridgeMaster */ = {
 			isa = PBXGroup;
 			children = (
-				17EACD821F37D52F00BA68D2 /* Settings.storyboard */,
-				17EACD7F1F37D52700BA68D2 /* Scan.storyboard */,
 				17EACD7C1F37D51F00BA68D2 /* Main.storyboard */,
-				17EACD791F37D51400BA68D2 /* Inventory.storyboard */,
 				17EACD761F37D50C00BA68D2 /* EditItem.storyboard */,
-				17EACD731F37D50500BA68D2 /* Edit.storyboard */,
-				17EACD701F37D4F800BA68D2 /* Delete.storyboard */,
 				177C2EDE1F37D3A500A87846 /* AppDelegate.swift */,
 				177C2EE01F37D3A500A87846 /* ViewController.swift */,
 				177C2EE81F37D3A500A87846 /* Assets.xcassets */,
@@ -255,14 +240,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				17EACD7E1F37D51F00BA68D2 /* Main.storyboard in Resources */,
-				17EACD751F37D50500BA68D2 /* Edit.storyboard in Resources */,
-				17EACD721F37D4F800BA68D2 /* Delete.storyboard in Resources */,
-				17EACD811F37D52700BA68D2 /* Scan.storyboard in Resources */,
 				177C2EEC1F37D3A500A87846 /* LaunchScreen.storyboard in Resources */,
 				177C2EE91F37D3A500A87846 /* Assets.xcassets in Resources */,
-				17EACD841F37D52F00BA68D2 /* Settings.storyboard in Resources */,
 				17EACD781F37D50C00BA68D2 /* EditItem.storyboard in Resources */,
-				17EACD7B1F37D51400BA68D2 /* Inventory.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,22 +313,6 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		17EACD701F37D4F800BA68D2 /* Delete.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				17EACD711F37D4F800BA68D2 /* Base */,
-			);
-			name = Delete.storyboard;
-			sourceTree = "<group>";
-		};
-		17EACD731F37D50500BA68D2 /* Edit.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				17EACD741F37D50500BA68D2 /* Base */,
-			);
-			name = Edit.storyboard;
-			sourceTree = "<group>";
-		};
 		17EACD761F37D50C00BA68D2 /* EditItem.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -357,36 +321,12 @@
 			name = EditItem.storyboard;
 			sourceTree = "<group>";
 		};
-		17EACD791F37D51400BA68D2 /* Inventory.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				17EACD7A1F37D51400BA68D2 /* Base */,
-			);
-			name = Inventory.storyboard;
-			sourceTree = "<group>";
-		};
 		17EACD7C1F37D51F00BA68D2 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				17EACD7D1F37D51F00BA68D2 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		17EACD7F1F37D52700BA68D2 /* Scan.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				17EACD801F37D52700BA68D2 /* Base */,
-			);
-			name = Scan.storyboard;
-			sourceTree = "<group>";
-		};
-		17EACD821F37D52F00BA68D2 /* Settings.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				17EACD831F37D52F00BA68D2 /* Base */,
-			);
-			name = Settings.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -491,6 +431,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6N7ULU8E68;
 				INFOPLIST_FILE = FridgeMaster/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gomez.FridgeMaster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -504,6 +445,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6N7ULU8E68;
 				INFOPLIST_FILE = FridgeMaster/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gomez.FridgeMaster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
