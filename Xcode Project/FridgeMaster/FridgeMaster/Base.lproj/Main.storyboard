@@ -139,7 +139,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Edit Item" id="OZU-F4-afa">
-                                        <barButtonItem key="leftBarButtonItem" style="plain" id="t3Y-Bv-Jr0">
+                                        <barButtonItem key="leftBarButtonItem" id="t3Y-Bv-Jr0">
                                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="DtI-cE-OUH">
                                                 <rect key="frame" x="16" y="5" width="50" height="33"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -198,7 +198,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Settings" id="DR3-aJ-4hp">
-                                        <barButtonItem key="leftBarButtonItem" style="plain" id="P9s-HO-MOG">
+                                        <barButtonItem key="leftBarButtonItem" id="P9s-HO-MOG">
                                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="yLP-kB-rnv">
                                                 <rect key="frame" x="16" y="5" width="50" height="33"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -247,7 +247,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Inventory" id="SuZ-hC-5re">
-                                        <barButtonItem key="leftBarButtonItem" style="plain" id="q6n-eR-LnI">
+                                        <barButtonItem key="leftBarButtonItem" id="q6n-eR-LnI">
                                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="m50-SN-MWr">
                                                 <rect key="frame" x="16" y="5" width="50" height="33"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -317,7 +317,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Delete Items" id="2i1-w4-qVN">
-                                        <barButtonItem key="leftBarButtonItem" style="plain" id="W3L-FQ-MoU">
+                                        <barButtonItem key="leftBarButtonItem" id="W3L-FQ-MoU">
                                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wFo-T5-gjG">
                                                 <rect key="frame" x="16" y="5" width="50" height="33"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -409,6 +409,9 @@
                                 <rect key="frame" x="53" y="45" width="84" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <segue destination="tPa-4o-8DH" kind="show" id="Ycg-vH-hMW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D6p-wF-AWR">
                                 <rect key="frame" x="241" y="50" width="66" height="59"/>
@@ -487,8 +490,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="YGH-Rc-34R"/>
-        <segue reference="I56-Yw-M6N"/>
-        <segue reference="EFM-co-Lct"/>
+        <segue reference="87d-j9-3ag"/>
+        <segue reference="KQ5-qS-Y3C"/>
+        <segue reference="UDO-pR-1Mp"/>
     </inferredMetricsTieBreakers>
 </document>
