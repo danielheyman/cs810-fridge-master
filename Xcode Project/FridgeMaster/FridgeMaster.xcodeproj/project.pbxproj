@@ -21,6 +21,7 @@
 		17A74DA21F4B4C83008A7151 /* RSBarcodes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17A74DA11F4B4C15008A7151 /* RSBarcodes.framework */; };
 		17A74DA31F4B4C83008A7151 /* RSBarcodes.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 17A74DA11F4B4C15008A7151 /* RSBarcodes.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		17A74DA61F4B4D28008A7151 /* BarcodeReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A74D441F4B4B5A008A7151 /* BarcodeReaderViewController.swift */; };
+		17AC0AB01F4CE69A00FC7F13 /* storageClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AC0AAF1F4CE69A00FC7F13 /* storageClass.swift */; };
 		17EACD7E1F37D51F00BA68D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17EACD7C1F37D51F00BA68D2 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -111,6 +112,7 @@
 		17A74D691F4B4B5A008A7151 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		17A74D6A1F4B4B5A008A7151 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		17A74D9C1F4B4C15008A7151 /* RSBarcodes.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = RSBarcodes.xcodeproj; sourceTree = "<group>"; };
+		17AC0AAF1F4CE69A00FC7F13 /* storageClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = storageClass.swift; sourceTree = "<group>"; };
 		17EACD7D1F37D51F00BA68D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -173,6 +175,7 @@
 				177C2EEA1F37D3A500A87846 /* LaunchScreen.storyboard */,
 				177C2EED1F37D3A500A87846 /* Info.plist */,
 				177C2EE51F37D3A500A87846 /* FridgeMaster.xcdatamodeld */,
+				17AC0AAF1F4CE69A00FC7F13 /* storageClass.swift */,
 			);
 			path = FridgeMaster;
 			sourceTree = "<group>";
@@ -410,6 +413,7 @@
 			files = (
 				17A74DA61F4B4D28008A7151 /* BarcodeReaderViewController.swift in Sources */,
 				177C2EE71F37D3A500A87846 /* FridgeMaster.xcdatamodeld in Sources */,
+				17AC0AB01F4CE69A00FC7F13 /* storageClass.swift in Sources */,
 				1766B6C31F4BA17F00F88770 /* NewItemViewController.swift in Sources */,
 				177C2EE11F37D3A500A87846 /* ViewController.swift in Sources */,
 				177C2EDF1F37D3A500A87846 /* AppDelegate.swift in Sources */,

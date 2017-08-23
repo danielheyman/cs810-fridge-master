@@ -267,8 +267,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ynz-zl-8Cq">
-                                <rect key="frame" x="191" y="133" width="154" height="30"/>
+                            <button opaque="NO" contentMode="center" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ynz-zl-8Cq">
+                                <rect key="frame" x="191" y="133" width="154" height="31"/>
                                 <state key="normal" title="Remove"/>
                                 <connections>
                                     <segue destination="XeN-me-eZj" kind="show" id="wBO-pn-NIj"/>
@@ -418,7 +418,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Create"/>
                                 <connections>
-                                    <segue destination="xF6-hw-60p" kind="show" id="YGH-Rc-34R"/>
+                                    <action selector="createButton:" destination="3Hw-Cr-Fag" eventType="touchUpInside" id="Q7O-F6-BDv"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cQ3-Fe-ZIp">
@@ -481,17 +481,20 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
+                        <outlet property="expirationDate" destination="Q1n-iz-XQT" id="OWB-yc-5LD"/>
+                        <outlet property="nameField" destination="cQ3-Fe-ZIp" id="Xzc-z0-bUd"/>
+                        <outlet property="purchaseDate" destination="GJ1-IV-NBT" id="qCE-jG-sMR"/>
                         <outlet property="upcField" destination="2eW-F3-bFA" id="cx8-fx-vzw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1qi-CG-XyJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-130" y="893"/>
+            <point key="canvasLocation" x="-130.40000000000001" y="892.80359820089961"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="87d-j9-3ag"/>
+        <segue reference="Ycg-vH-hMW"/>
         <segue reference="KQ5-qS-Y3C"/>
-        <segue reference="UDO-pR-1Mp"/>
+        <segue reference="87d-j9-3ag"/>
     </inferredMetricsTieBreakers>
 </document>
