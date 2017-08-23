@@ -8,7 +8,7 @@
 
 import Foundation
 
-class FoodItem:NSObject {
+class FoodItem:NSObject, NSCoding {
     var name: String!
     var upc: String!
     var expirationDate: String!
@@ -19,5 +19,19 @@ class FoodItem:NSObject {
         self.upc = upc
         self.expirationDate = expirationDate
         self.purchaseDate = purchaseDate
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        self.name = aDecoder.decodeObject(forKey: "name") as? String ?? ""
+        self.upc = aDecoder.decodeObject(forKey: "upc") as? String ?? ""
+        self.expirationDate = aDecoder.decodeObject(forKey: "expirationDate") as? String ?? ""
+        self.purchaseDate = aDecoder.decodeObject(forKey: "purchaseDate") as? String ?? ""
+    }
+    
+    func encode(with aCoder: NSCoder) {
+        aCoder.encode(name, forKey: "name")
+        aCoder.encode(upc, forKey: "upc")
+        aCoder.encode(expirationDate, forKey: "expirationDate")
+        aCoder.encode(purchaseDate, forKey: "purchaseDate")
     }
 }

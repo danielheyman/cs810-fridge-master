@@ -21,13 +21,6 @@ class NewItemViewController: UIViewController {
         super.viewDidLoad()
         upcField.text = upcString;
         // Do any additional setup after loading the view.
-        
-        // This is a test of getting the stored data. The stored data will be written to the console.
-        if let x = UserDefaults.standard.object(forKey: "foodList") as? Data {
-            let decoded = NSKeyedUnarchiver.unarchiveObject(with: x) as! [FoodItem]
-            print(decoded)
-        }
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,7 +28,7 @@ class NewItemViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func createButton() {
+    @IBAction func createButtonPress(_ sender:UIButton) {
         let item = FoodItem(name: nameField.text!, upc: upcField.text!, expirationDate: expirationDate.text!, purchaseDate: purchaseDate.text!)
         if let x = UserDefaults.standard.object(forKey: "foodList") as? Data {
             var decoded = NSKeyedUnarchiver.unarchiveObject(with: x) as! [FoodItem]
@@ -48,18 +41,19 @@ class NewItemViewController: UIViewController {
             let encodedData = NSKeyedArchiver.archivedData(withRootObject: foodListArray)
             UserDefaults.standard.set(encodedData, forKey: "foodList")
         }
+        print("Stored Item: ", item)
         
-        
-    }
+        // This is a test of getting the stored data. The stored data will be written to the console.
+        if let x = UserDefaults.standard.object(forKey: "foodList") as? Data {
+            let decoded = NSKeyedUnarchiver.unarchiveObject(with: x) as! [FoodItem]
+            for food in decoded {
+                print(food.name)
+                print(food.upc)
+                print(food.expirationDate)
+                print(food.purchaseDate)
+            }
+        }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
     }
-    */
 
 }
