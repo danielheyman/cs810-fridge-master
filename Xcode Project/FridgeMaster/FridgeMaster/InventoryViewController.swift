@@ -32,7 +32,7 @@ class InventoryViewController: UIViewController, UITableViewDelegate, UITableVie
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = foods[indexPath.row].name
+        cell.textLabel?.text = foods[indexPath.row].name + " Expires: " + foods[indexPath.row].expirationDate
         
         return cell
     }
