@@ -15,7 +15,7 @@ import UIKit
 import AVFoundation
 import RSBarcodes
 
-class BarcodeReaderViewController: RSCodeReaderViewController {
+class ScannerViewController: RSCodeReaderViewController {
 
     @IBOutlet var toggle: UIButton!
     @IBAction func toggle(_ sender: AnyObject?) {
