@@ -33,7 +33,7 @@ class LoadingNutritionViewController: UIViewController {
     }
     
     func findFromUpc(upc: String) {
-        let urlString = URL(string: "http://127.0.0.1:9090/ndb/search/list?qlookup=\(upc)")
+        let urlString = URL(string: "https://ndb.nal.usda.gov/ndb/search/list?qlookup=\(upc)")
         
         URLSession.shared.dataTask(with: urlString!) { (data, response, error) in
             if error != nil {
@@ -55,7 +55,7 @@ class LoadingNutritionViewController: UIViewController {
     
     
     func findFromId(upc: String, id: String) {
-        let urlString = URL(string: "http://127.0.0.1:9090/ndb/foods/show/\(id)?format=Abridged&reportfmt=csv&Qv=1")
+        let urlString = URL(string: "https://ndb.nal.usda.gov/ndb/foods/show/\(id)?format=Abridged&reportfmt=csv&Qv=1")
         
         URLSession.shared.dataTask(with: urlString!) { (data, response, error) in
             if error != nil {
