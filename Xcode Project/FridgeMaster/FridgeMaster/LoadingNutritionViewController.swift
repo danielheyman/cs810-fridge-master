@@ -39,7 +39,7 @@ class LoadingNutritionViewController: UIViewController {
             if error != nil {
                 self.setError(error: "Nutrition DB down - Error #1")
             } else {
-                let res = String(data: data!, encoding: String.Encoding.utf8)
+                let res = String(data: data!, encoding: String.Encoding.ascii)
                 
                 if res!.range(of:"Click to view reports for this food") != nil {
                     let id = (res!).components(separatedBy: "/ndb/foods/show/")[1].components(separatedBy: "?")[0]
@@ -61,7 +61,7 @@ class LoadingNutritionViewController: UIViewController {
             if error != nil {
                 self.setError(error: "Nutrition DB down - Error #2")
             } else {
-                let res = String(data: data!, encoding: String.Encoding.utf8)
+                let res = String(data: data!, encoding: String.Encoding.ascii)
                 
                 if res != nil {
                     self.convertFromRes(res: res!)

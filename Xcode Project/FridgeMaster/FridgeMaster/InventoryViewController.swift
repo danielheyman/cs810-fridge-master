@@ -34,14 +34,11 @@ class InventoryViewController: UIViewController, UITableViewDelegate, UITableVie
         cell.title.text = foods[indexPath.row].name
         cell.expiration.text = foods[indexPath.row].expirationDate
         if let nutrition = foods[indexPath.row].nutrition {
-            var energy: Float = 0
             var protein: Float = 0
             var carbs: Float = 0
             var fat: Float = 0
+            
             for fact in nutrition.nutrition_facts {
-                if fact.name == "Energy" {
-                    energy = fact.value
-                }
                 if fact.name == "Protein" {
                     protein = fact.value
                 }
@@ -52,12 +49,15 @@ class InventoryViewController: UIViewController, UITableViewDelegate, UITableVie
                     fat = fact.value
                 }
             }
-            if energy != 0 {
-                protein = (protein * 4 / energy * 1000).rounded() / 10
-                carbs = (carbs * 4 / energy * 1000).rounded() / 10
-                fat = (fat * 9 / energy * 1000).rounded() / 10
+
+            let calories = protein * 4 + carbs * 4 + fat * 9
+            if calories != 0 {
+                protein = (protein * 4 / calories * 100).rounded()
+                carbs = (carbs * 4 / calories * 100).rounded()
+                fat = (fat * 9 / calories * 100).rounded()
             }
-            cell.nutrition.text = "P\(protein)%/F\(fat)%/C\(carbs)%"
+            
+            cell.nutrition.text = "P:\(Int(protein))% F:\(Int(fat))% C:\(Int(carbs))%"
         } else {
             cell.nutrition.text = ""
         }

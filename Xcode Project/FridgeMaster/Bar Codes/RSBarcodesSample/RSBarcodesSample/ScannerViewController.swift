@@ -58,7 +58,9 @@ class ScannerViewController: RSCodeReaderViewController {
     
     
     @IBAction func DemoButtonPress(_ sender: UIButton) {
-        barcode = "076301721289"
+        let barcodes = ["076301721289", "048121276423", "037600105088", "041190008193"]
+        let randomIndex = Int(arc4random_uniform(UInt32(barcodes.count)))
+        barcode = barcodes[randomIndex]
         DispatchQueue.main.async(execute: {
             self.performSegue(withIdentifier: "loadingNutritionSegue", sender: nil)
         })
