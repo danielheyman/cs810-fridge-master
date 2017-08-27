@@ -47,7 +47,7 @@ class ScannerViewController: RSCodeReaderViewController {
                     self.barcode = barcode.stringValue
                     print("Barcode found: type= " + barcode.type + " value= " + barcode.stringValue)
                     DispatchQueue.main.async(execute: {
-                        self.performSegue(withIdentifier: "newItemSegue", sender: nil)
+                        self.performSegue(withIdentifier: "loadingNutritionSegue", sender: nil)
                     })
                     //self.reset();
                     return;
@@ -56,9 +56,17 @@ class ScannerViewController: RSCodeReaderViewController {
         }
     }
     
+    
+    @IBAction func DemoButtonPress(_ sender: UIButton) {
+        barcode = "076301721289"
+        DispatchQueue.main.async(execute: {
+            self.performSegue(withIdentifier: "loadingNutritionSegue", sender: nil)
+        })
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "newItemSegue" {
-            let secondController = segue.destination as! NewItemViewController
+        if segue.identifier == "loadingNutritionSegue" {
+            let secondController = segue.destination as! LoadingNutritionViewController
             secondController.upcString = barcode
         }
     }

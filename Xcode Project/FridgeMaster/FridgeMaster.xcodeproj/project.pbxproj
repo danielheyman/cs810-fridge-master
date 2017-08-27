@@ -26,6 +26,7 @@
 		9B463AF41F4E5223004B301B /* InventoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B463AF31F4E5223004B301B /* InventoryViewController.swift */; };
 		9B463AF61F500C20004B301B /* InventoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B463AF51F500C20004B301B /* InventoryTableViewCell.swift */; };
 		9B463AF81F500E77004B301B /* ViewItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B463AF71F500E77004B301B /* ViewItemViewController.swift */; };
+		9BDA4D511F5293E200F7025B /* LoadingNutritionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDA4D501F5293E200F7025B /* LoadingNutritionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +121,7 @@
 		9B463AF31F4E5223004B301B /* InventoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InventoryViewController.swift; sourceTree = "<group>"; };
 		9B463AF51F500C20004B301B /* InventoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InventoryTableViewCell.swift; sourceTree = "<group>"; };
 		9B463AF71F500E77004B301B /* ViewItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewItemViewController.swift; sourceTree = "<group>"; };
+		9BDA4D501F5293E200F7025B /* LoadingNutritionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingNutritionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +187,7 @@
 				9B463AF31F4E5223004B301B /* InventoryViewController.swift */,
 				9B463AF51F500C20004B301B /* InventoryTableViewCell.swift */,
 				9B463AF71F500E77004B301B /* ViewItemViewController.swift */,
+				9BDA4D501F5293E200F7025B /* LoadingNutritionViewController.swift */,
 			);
 			path = FridgeMaster;
 			sourceTree = "<group>";
@@ -422,6 +425,7 @@
 			files = (
 				9B463AF61F500C20004B301B /* InventoryTableViewCell.swift in Sources */,
 				9B463AF41F4E5223004B301B /* InventoryViewController.swift in Sources */,
+				9BDA4D511F5293E200F7025B /* LoadingNutritionViewController.swift in Sources */,
 				17A74DA61F4B4D28008A7151 /* ScannerViewController.swift in Sources */,
 				177C2EE71F37D3A500A87846 /* FridgeMaster.xcdatamodeld in Sources */,
 				17AC0AB01F4CE69A00FC7F13 /* storageClass.swift in Sources */,

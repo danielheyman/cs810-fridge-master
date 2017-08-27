@@ -14,6 +14,8 @@ class InventoryTableViewCell: UITableViewCell {
     
     @IBOutlet var expiration: UILabel!
     
+    @IBOutlet var nutrition: UILabel!
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

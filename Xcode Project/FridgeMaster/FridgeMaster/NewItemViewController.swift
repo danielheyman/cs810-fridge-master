@@ -14,13 +14,25 @@ class NewItemViewController: UIViewController {
     @IBOutlet weak var upcField: UITextField!
     @IBOutlet weak var purchaseDate: UITextField!
     @IBOutlet weak var expirationDate: UITextField!
-    
+    @IBOutlet var errorField: UILabel!
+
     var upcString = String()
+    var nutrition: Nutrition? = nil
+    var errorString: String? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        upcField.text = upcString;
-        // Do any additional setup after loading the view.
+        upcField.text = upcString
+        upcField.isEnabled = false
+        nameField.text = nutrition?.name
+        errorField.text = errorString
+        
+        let date = Date()
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MM/dd/yyyy"
+        purchaseDate.text = formatter.string(from: date)
+        // Add a week in seconds
+        expirationDate.text = formatter.string(from: date.addingTimeInterval(60 * 60 * 24 * 7))
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,7 +41,7 @@ class NewItemViewController: UIViewController {
     }
     
     @IBAction func createButtonPress(_ sender:UIButton) {
-        let item = FoodItem(name: nameField.text!, upc: upcField.text!, expirationDate: expirationDate.text!, purchaseDate: purchaseDate.text!)
+        let item = FoodItem(name: nameField.text!, upc: upcField.text!, expirationDate: expirationDate.text!, purchaseDate: purchaseDate.text!, nutrition: nutrition)
         if let x = UserDefaults.standard.object(forKey: "foodList") as? Data {
             var decoded = NSKeyedUnarchiver.unarchiveObject(with: x) as! [FoodItem]
             decoded.append(item)
@@ -43,16 +55,9 @@ class NewItemViewController: UIViewController {
         }
         print("Stored Item: ", item)
         
-        // This is a test of getting the stored data. The stored data will be written to the console.
-        if let x = UserDefaults.standard.object(forKey: "foodList") as? Data {
-            let decoded = NSKeyedUnarchiver.unarchiveObject(with: x) as! [FoodItem]
-            for food in decoded {
-                print(food.name)
-                print(food.upc)
-                print(food.expirationDate)
-                print(food.purchaseDate)
-            }
-        }
+        DispatchQueue.main.async(execute: {
+            self.performSegue(withIdentifier: "invetoryTableSegue", sender: nil)
+        })
 
     }
 
