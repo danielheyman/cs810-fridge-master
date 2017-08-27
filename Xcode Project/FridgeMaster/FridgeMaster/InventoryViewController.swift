@@ -45,6 +45,16 @@ class InventoryViewController: UIViewController, UITableViewDelegate, UITableVie
         })
     }
     
+    // this is the delete function
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            // delete dayta
+            foods.remove(at: indexPath.row)
+            // delete rows
+            tableView.deleteRows(at: [indexPath], with: UITableViewRowAnimation.left)
+        }
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "viewItemSegue" {
             let secondController = segue.destination as! ViewItemViewController
