@@ -44,7 +44,13 @@ class ScannerViewController: RSCodeReaderViewController {
             if !self.dispatched { // triggers for only once
                 self.dispatched = true
                 for barcode in barcodes {
-                    self.barcode = barcode.stringValue
+                    var upc:String = barcode.stringValue
+                    if upc.characters.first == "0"
+                    {
+                        upc.remove(at: upc.startIndex)
+                    }
+
+                    self.barcode = upc
                     print("Barcode found: type= " + barcode.type + " value= " + barcode.stringValue)
                     DispatchQueue.main.async(execute: {
                         self.performSegue(withIdentifier: "loadingNutritionSegue", sender: nil)
