@@ -50,9 +50,9 @@ class InventoryViewController: UIViewController, UITableViewDelegate, UITableVie
             let secondController = segue.destination as! ViewItemViewController
             secondController.upcString = foods[selectedIndex].upc
         }
-        if segue.identifier == "deleteItemSegue" {
-            let secondController = segue.destination as! DeleteViewController
-            secondController.foodArr = foods
-        }
+        //if segue.identifier == "deleteItemSegue" {
+          //  let secondController = segue.destination as! DeleteViewController
+            //secondController.foodArr = foods
+        //}
     }
 }

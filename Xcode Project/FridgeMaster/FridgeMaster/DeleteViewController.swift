@@ -11,15 +11,14 @@ import Foundation
 import UIKit
 
 class DeleteViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    // delete this/dragndrop new
-    // @IBOutlet var tableView: UITableView!
     
     // hopefully naming this the same doesn't cause issues
     
-    @IBOutlet weak var UITableView: UITableView!
+    
+    @IBOutlet var tableView: UITableView!
     
     //var foods: [FoodItem] = [FoodItem(name: "Apple", upc: "Testing", expirationDate: "Expires", purchaseDate: "Purchased")]
-    var foodArr: [FoodItem] = []
+    var foodArr: [FoodItem] = [FoodItem(name: "Apple Juice", upc: "076301721289", expirationDate: "10/10/17", purchaseDate: "9/10/17")]
     var selectedIndex: Int = 0
     
     override func viewDidLoad() {
@@ -40,8 +39,8 @@ class DeleteViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     // puts stuff in cells
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = foodArr[indexPath.row].name + " Expires: " + foodArr[indexPath.row].expirationDate
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! DeleteTableViewCell
+        cell.item.text = foodArr[indexPath.row].name + "(Expires: " + foodArr[indexPath.row].expirationDate + ")"
         
         return cell
     }
@@ -58,9 +57,9 @@ class DeleteViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // I feel like this can't be correct
-        if segue.identifier == "removeToInventorySegue" {
-            let secondController = segue.destination as! InventoryViewController
-            secondController.foods = foodArr // not dure if right way to do this
-        }
+        //if segue.identifier == "removeToInventorySegue" {
+            //let secondController = segue.destination as! InventoryViewController
+            //secondController.foods = foodArr // not dure if right way to do this
+       // }
     }
 }
