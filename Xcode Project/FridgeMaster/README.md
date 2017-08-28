@@ -1,3 +1,9 @@
+Matthew Gomez - Daniel Heyman - Jeremy Doll
+
+I pledge my honor that I have abided by the Stevens Honor System
+
+# To Run
+
 Open FridgeMaster.xcodeproj
 
 If you are testing using a physical device (camera works):
